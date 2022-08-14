@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+    <title>Coffee</title>
+  </head>
+  <body>
+    <div class="loadingPage">
+      <div class="center">
+        <!-- charater -->
+        <div class="coffee-cup">
+          <div class="coffee">
+            <div class="integradient"></div>
+          </div>
+        </div>
+        <!-- Text box -->
+        <div class="loading-text" data-text="loading...">loading...</div>
+      </div>
+    </div>
+
+    <!-- hero section -->
+    <header id="home">
+      <!-- section-container -->
+      <div class="container">
+        <!-- nav-container -->
+        <nav>
+          <!-- logo -->
+          <div class="logo-container">
+            <img src="./image/logo.png" alt="logo" />
+            <h3>Coffee</h3>
+          </div>
+
+          <!-- menu  -->
+          <div class="menu-list">
+            <a href="#home">home<span>首頁</span></a>
+            <a href="#about">about<span>關於我們</span></a>
+            <a href="#menu">menu<span>菜單</span></a>
+            <a href="#contact">contact<span>聯絡我們</span></a>
+          </div>
+
+          <!-- menu button  -->
+          <div id="menu-btns" class="menu-btns">
+            <!-- <i class="fa-solid fa-magnifying-glass btn" id="search-btn">
+              <input type="text" class="search-box show" />
+            </i> -->
+            <i class="fa-solid fa-cart-shopping btn" id="cart-btn">
+              <div class="cart-items-num">0</div>
+            </i>
+            <div class="ham-btn btn">
+              <div class="top"></div>
+              <div class="middle"></div>
+              <div class="bottom"></div>
+            </div>
+          </div>
+        </nav>
+
+        <!-- hero title -->
+        <div class="hero-title">
+          <h3 class="title">enjoy your morning Coffee</h3>
+          <sub class="title">live your life with energy</sub>
+          <!-- explore -->
+          <div class="explore title">
+            <a href="#about"><i class="fa-solid fa-angle-down"></i></a>
+          </div>
+        </div>
+
+        <!-- shopping cart -->
+        <div class="cart-overlay">
+          <div class="cart">
+            <!-- close btn -->
+            <span id="close-cart" class="close-cart">
+              <i class="fas fa-window-close"></i>
+            </span>
+            <!-- cart title -->
+            <h2>cart</h2>
+            <!-- cart-content -->
+            <div class="cart-content">
+              <!-- cart item  created by JS -->
+
+              <!-- cart footer  -> totalPrice clearALLBtn  -->
+              <div class="cart-footer">
+                <h3>your total: $ <span class="cart-total">0</span></h3>
+                <button class="clear-btn">clear cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- about section -->
+    <section id="about" class="section-container">
+      <div class="container">
+        <!-- title -->
+        <h3 class="section-title">About</h3>
+        <!-- image & content container -->
+        <div class="detail-container">
+          <!-- image -->
+          <div class="image-box ani">
+            <img src="./image/about section.jpg" alt="about" />
+          </div>
+          <!-- content -->
+          <div class="content-box ani">
+            <h5>MAKE COFFE SPECIAL</h5>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptates asperiores fugit quae, eum veniam aut architecto minus
+              alias iure! Id, quibusdam! Delectus inventore, aliquam ad
+              perferendis eaque saepe facere culpa.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- menu section -->
+    <section id="menu" class="section-container">
+      <div class="container">
+        <!-- section-title -->
+        <h3 class="section-title">menu</h3>
+        <!-- products -->
+        <div class="products">
+          <!-- drink -->
+          <div class="product-container">
+            <h5 class="type-title">drink</h5>
+            <div class="product-box" id="drink">
+              <!-- single product by JS-->
+
+              <!-- drink01 -->
+              <!-- <div class="box">
+                <div class="img-box">
+                  <img src="./image/product/menu01.jpg" alt="" />
+                  <button class="bag-btn">
+                    <i class="fas fa-shopping-cart"></i>
+                    add to cart
+                  </button>
+                </div>
+                <div class="product-name">Lorem01</div>
+                <div class="price">NT$135</div>
+              </div> -->
+            </div>
+          </div>
+          <!-- dessert -->
+          <div class="product-container">
+            <h5 class="type-title">dessert</h5>
+            <div class="product-box" id="dessert">
+              <!-- single product by JS-->
+              <!-- dessert01 -->
+              <!-- <div class="box">
+                <div class="img-box">
+                  <img src="./image/product/dessert01.jpg" alt="" />
+                  <button class="bag-btn">
+                    <i class="fas fa-shopping-cart"></i>
+                    add to cart
+                  </button>
+                </div>
+                <div class="product-name">Lorem1</div>
+                <div class="price">NT$135</div>
+              </div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- contact section -->
+    <section id="contact" class="section-container">
+      <div class="container">
+        <!-- section-title -->
+        <h3 class="section-title">contact</h3>
+        <!-- content  -->
+        <div class="contact-container">
+          <!-- map -->
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7497333.510409772!2d115.58614291981422!3d23.4313243787916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346ef3065c07572f%3A0xe711f004bf9c5469!2z5Y-w54Gj!5e0!3m2!1szh-TW!2stw!4v1649690402400!5m2!1szh-TW!2stw"
+            frameborder="0"
+            class="map"
+          ></iframe>
+          <!-- form -->
+          <form action="">
+            <h5>get in touch</h5>
+            <div class="input-container">
+              <div class="input-box">
+                <i class="fa-solid fa-user"></i>
+                <input type="text" placeholder="name" />
+              </div>
+              <div class="input-box">
+                <i class="fa-solid fa-envelope"></i>
+                <input type="text" placeholder="email" />
+              </div>
+              <div class="input-box">
+                <i class="fa-solid fa-mobile-screen-button"></i>
+                <input type="text" placeholder="number" />
+              </div>
+            </div>
+            <button class="btn">contact</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer section -->
+    <footer class="section-container">
+      <div class="container">
+        <div class="link">
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+        <div class="copy-right">
+          created by <span> xxx xxx | all right reserved</span>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

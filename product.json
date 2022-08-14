@@ -1,0 +1,70 @@
+{
+    "drink":[
+        {
+            "pid": "1",
+            "details": {
+                "title" : "Green Tea Latte",
+                "price" : "150",
+                "image" : "./image/product/menu01.jpg"
+            }
+        },
+        {
+            "pid": "2",
+            "details": {
+                "title" : "Cocoa Macchiato",
+                "price" : "135",
+                "image" : "./image/product/menu02.jpg"
+            }
+        },
+        {
+            "pid": "3",
+            "details": {
+                "title" : "Cold Brew Coffee",
+                "price" : "140",
+                "image" : "./image/product/menu03.jpg"
+            }
+        },
+        {
+            "pid": "4",
+            "details": {
+                "title" : "Latte",
+                "price" : "130",
+                "image" : "./image/product/menu04.jpg"
+            }
+        }
+    ],
+    "dessert":[
+        {
+            "sid": "1",
+            "details": {
+                "title" : "tart",
+                "price" : "155",
+                "image" : "./image/product/dessert01.jpg"
+            }
+        },
+        {
+            "sid": "2",
+            "details": {
+                "title" : "waffles",
+                "price" : "130",
+                "image" : "./image/product/dessert02.jpg"
+            }
+        },
+        {
+            "sid": "3",
+            "details": {
+                "title" : "pie",
+                "price" : "140",
+                "image" : "./image/product/dessert03.jpg"
+            }
+        },
+        {
+            "sid": "4",
+            "details": {
+                "title" : "ice cream",
+                "price" : "125",
+                "image" : "./image/product/dessert04.jpg"
+            }
+        }
+    ]
+}
