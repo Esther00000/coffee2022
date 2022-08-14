@@ -56,6 +56,10 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-transition: -webkit-transform 2s;
+  transition: -webkit-transform 2s;
+  transition: transform 2s;
+  transition: transform 2s, -webkit-transform 2s;
 }
 
 .loadingPage .center {
@@ -118,6 +122,8 @@ body {
   position: absolute;
   left: 0;
   bottom: 0;
+  -webkit-animation: integradientAni 3s linear;
+          animation: integradientAni 3s linear;
 }
 
 .loadingPage .loading-text {
@@ -1018,6 +1024,24 @@ form .btn:active {
   }
   to {
     color: transparent;
+  }
+}
+
+@-webkit-keyframes integradientAni {
+  0% {
+    height: 0%;
+  }
+  100% {
+    height: 100%;
+  }
+}
+
+@keyframes integradientAni {
+  0% {
+    height: 0%;
+  }
+  100% {
+    height: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */

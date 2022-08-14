@@ -61,6 +61,19 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    transition:  transform 2s ;
+    // &.complete{
+    //     transform: translateY(300%);
+    //     opacity: 0;
+        // .center .coffee-cup{
+        //     transition: all 1s .5s ;
+        //     transform: rotate(360deg) scale(0);
+        // }
+        // .loading-text{
+        //     transition: opacity .5s .5s;
+        //     opacity: 0;
+        // }
+    // }
     .center{
         display: flex;
         flex-direction: column;
@@ -103,6 +116,7 @@ body{
                     position: absolute;
                     left: 0;
                     bottom: 0;
+                    animation: integradientAni 3s linear;
                 }
             }
         }
@@ -809,5 +823,14 @@ form{
     }
     to{
         color: transparent;
+    }
+}
+
+@keyframes integradientAni {
+    0%{
+        height: 0%;
+    }
+    100%{
+        height: 100%;
     }
 }
