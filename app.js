@@ -12,6 +12,12 @@ const cartItemNum = document.querySelector('.cart-items-num')
 const cartTotalPrice = document.querySelector('.cart-total')
 const clearCartBtn = document.querySelector('.clear-btn')
 
+// loading
+let loadingPage = document.querySelector('.loadingPage')
+let coffeeCup = document.querySelector('.coffee-cup')
+let coffee = document.querySelector('.coffee')
+let integradient = document.querySelector('.integradient')
+
 let carts = []
 let removeBtns = []
 
@@ -55,7 +61,9 @@ document.addEventListener('DOMContentLoaded',() => {
 })
 
  
-
+// window.addEventListener('unload',() => {
+//     update.Animation()
+// })
 
 
 
@@ -307,14 +315,6 @@ class Updata {
     }
 
     // GSAP Animation
-    loadingAni() {
-
-        tl.to(".integradient",{height: "100%",duration: 3})
-            .to(".coffee-cup",{rotation: 360,scale: 0,duration: 1})
-            .to(".loading-text",{scale: 0,duration: 1},'<')  // '<'在上一個動畫 開始處 插入此動畫   與上一個動畫一起開始
-            .to(".loadingPage",{y:"200%","display": "none",duration: 1.5})
-            
-    }
 
     homeAni() {
         tl.from("nav",{yPercent: -100 ,duration:0.5})
@@ -418,10 +418,7 @@ class Updata {
 
 }
 
-let loadingPage = document.querySelector('.loadingPage')
-let coffeeCup = document.querySelector('.coffee-cup')
-let coffee = document.querySelector('.coffee')
-let integradient = document.querySelector('.integradient')
+
 
 
 
