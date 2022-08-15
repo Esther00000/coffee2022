@@ -60,10 +60,8 @@ document.addEventListener('DOMContentLoaded',() => {
    
 })
 
+
  
-// window.addEventListener('unload',() => {
-//     update.Animation()
-// })
 
 
 
@@ -400,12 +398,12 @@ class Updata {
                 // loadingPage.classList.add('complete')
                 clearInterval(timer)
             }
-        },30)
+        },50)
     }
 
     Animation() {
         tl.call(this.loadingcssAni)
-          .to(".coffee-cup",{rotation: 360,scale: 0,duration: 1,delay: 2.5})
+          .to(".coffee-cup",{rotation: 360,scale: 0,duration: 1},'>7.5')
           .to(".loading-text",{scale: 0,duration: 1},'<')  // '<'在上一個動畫 開始處 插入此動畫   與上一個動畫一起開始
           .to(".loadingPage",{y:"200%","display": "none",duration: .5})
           .call(this.homeAni)
