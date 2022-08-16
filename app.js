@@ -393,7 +393,7 @@ class Updata {
         let percent = 0
         let timer = setInterval(() => {
             integradient.style.height = `${percent}%`
-            percent+=1
+            percent+=0.98
             if(percent>=100) {
                 // loadingPage.classList.add('complete')
                 clearInterval(timer)
@@ -404,6 +404,7 @@ class Updata {
     Animation() {
         tl.call(this.loadingcssAni)
           .to(".coffee-cup",{rotation: 360,scale: 0,duration: 1},'>9')
+          .to(".coffee-cup",{rotation: 360,scale: 0,duration: 1},'>8')
           .to(".loading-text",{scale: 0,duration: 1},'<')  // '<'在上一個動畫 開始處 插入此動畫   與上一個動畫一起開始
           .to(".loadingPage",{y:"200%","display": "none",duration: .5})
           .call(this.homeAni)
