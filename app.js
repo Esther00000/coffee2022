@@ -393,7 +393,7 @@ class Updata {
         let percent = 0
         let timer = setInterval(() => {
             integradient.style.height = `${percent}%`
-            percent+=0.98
+            percent+=0.99
             if(percent>=100) {
                 // loadingPage.classList.add('complete')
                 clearInterval(timer)
