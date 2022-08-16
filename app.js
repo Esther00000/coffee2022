@@ -399,15 +399,13 @@ class Updata {
 
     Animation() {
         tl.call(this.loadingcssAni)
-           .to(".coffee-cup",{rotation: 360,scale: 0,duration: .7},'>10')
+          .to(".coffee-cup",{rotation: 360,scale: 0,duration: .7},'>7.5')
           .to(".loading-text",{scale: 0,duration: .5},"<")   // '<'在上一個動畫 開始處 插入此動畫   與上一個動畫一起開始
           .to(".loadingPage",{y:"200%","display": "none",duration: .5})
           .call(this.homeAni)
           .call(this.aboutAni)
           .call(this.menuAni)
           .call(this.footerAni)
-
-
     }
 
 }
